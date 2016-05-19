@@ -1,44 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Areas of Expertise</title>
-<link rel="stylesheet" href="css/styles.css">
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hyperion Services Ltd</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<h1>Areas of Expertise</h1>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="row">
-  <div class="col-md-4 col-sm-6 col-xs-12">
-  	<div class="cell">
-	  	<h2>Marketing</h2>
-	  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-	  </div>
-  </div>
-  <div class="col-md-4 col-sm-6 col-xs-12">
-  	<div class="cell">
-	  	<h2>IT</h2>
-	  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-  	</div>
-  </div>
-  <div class="col-md-4 col-sm-12 col-xs-12">
-  	<div class="cell">
-	  	<h2>Operations</h2>
-	  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-  	</div>
-  </div>
-</div>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img" alt="Logo image"></div>
+          </a>
 
-</body>
-</html>
-<<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Hyperion</h1><h2>Services Ltd</h2></a>
+          </div>
+
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li id="navMenuButton">
+              <a href="#" onclick="$dc.loadMenuCategories();">
+                <br class="hidden-xs"> Technology</a>
+            </li>
+            <li>
+              <a href="#">
+                <br class="hidden-xs"> Design</a>
+            </li>
+            <li>
+              <a href="#">
+                <br class="hidden-xs"> Leadership</a>
+            </li>
+            <li>
+              <a href="#">
+                <br class="hidden-xs"> Contact</a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <div class="tools">
+    <div class="trans-rect">
+      <p class="jumbo-text" id="jumbo-txt-1">Technology is the tool set.</p>
+      <p class="jumbo-text" id="jumbo-txt-2">We are the craftsmen.</p>
+    </div>
+    <button id="learn-more-button" type="button" class="btn-lg" >learn<br>more</button>
+    <img src="images/jumbotron_1200.jpg" alt="Picture of tools" >
+  </div>
+
+<div id="main-content" class="container">
+  <div id="dividing-line"></div>
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+    	<div class="cell" id="design-cell">
+  	  	<h2>design<br>driven</h2>
+        <img src="/images/icon-compass.svg" alt="drawing compass icon" class="content-icons">
+  	  </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+    	<div class="cell">
+        <h2>mobile<br>first</h2>
+        <img src="/images/icon-phone.svg" alt="mobile phone icon" class="content-icons">
+    	</div>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+    	<div class="cell">
+        <h2>agile &amp;<br>flexible</h2>
+        <img src="/images/icon-knife.svg" alt="swiss army knife icon" class="content-icons">
+    	</div>
+    </div>
+  </div> <!-- Row -->
+
+  <div class="row content-full">
+    <h2 class="content-full-head">Tools of the Trade</h2>
+    <p class="content-full-copy">Using the latest technology can lower development costs and the lifetime cost of maintaining a product. Starting a new project using technology that is already out of date means finding developers to maintain the product in the future could be challenging. Not only that, but new frameworks and technologies are coming online at rates unprecedented in our industry, as are new development paradigns such as Single Page Applications (SPA) and rapid prototyping and development tools such as Bootstrap, Ruby on Rails and AngularJS. At Hyperion we pride ourselves in being versed in the pros (and cons!) of all the latest technology to keep costs under control now and in the future.</p>
+    <p class="content-full-copy">Some of our preferred technologies:</p>
+    <table class="table table-responsive table-condensed">
+      <thead>
+        <tr>
+          <th>Technology</th>
+          <th>Application</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bootstrap</td>
+          <td>Rapid website front-end contruction</td>
+        </tr>
+        <tr>
+          <td>MongoDb</td>
+          <td>Schemaless database prefect for unstructured data</td>
+        </tr>
+        <tr>
+          <td>Ruby on Rails</td>
+          <td>Rapid data driven website contruction</td>
+        </tr>
+        <tr>
+          <td>AngularJS</td>
+          <td>Single page web apps</td>
+        </tr>
+        <tr>
+          <td>Chrome Developer Tools</td>
+          <td>Responsive website front end development</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div> <!-- Row -->
+
+  <div class="row content-full">
+    <h2 class="content-full-head">Design Driven</h2>
+    <p class="content-full-copy">Design is in our DNA. With over 15 years of graphic design, logo design, print layout, branding, UI/UX and art direction you can be assured that cutting edge design will always be a top consideration in any of our projects. User needs and feedback are taken into considation from the beginning in design sprints and all through user acceptance.</p>
+    <div class="col-md-4 col-sm-6 col-xs-12 picture-cell">
+      <div class="cell" id="design-cell">
+        <h3>logo<br>design</h3>
+        <img src="/images/logos-designed.jpg" alt="Logos and icons" class="content-full-pics">
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 picture-cell">
+      <div class="cell" id="design-cell">
+        <h3>wireframes<br>&amp; prototypes</h3>
+        <img src="/images/plans.jpg" alt="Web site mockup" class="content-full-pics">
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12 picture-cell">
+      <div class="cell" id="design-cell">
+        <h3>web, mobile<br>&amp; desktop</h3>
+        <img src="/images/web-design.jpg" alt="Web site design" class="content-full-pics">
+      </div>
+    </div>
+  </div> <!-- Row -->
+
+  <div class="row content-full">
+    <div class="col-md-4 col-sm-6 col-xs-12 text-cell">
+        <h2 class="content-full-head">Mobile First</h2>
+        <p class="content-full-copy">Over 80% of all internet users use a smart phone and 56% of web traffic comes from mobile devices. This means designing for small and large screens (known as responsive design) is not just a nice-to-have, but a necessity. At Hyperion we understand this need and factor that into the product from inception.</p>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 text-cell">
+        <h2 class="content-full-head">Agile &amp; Flexible</h2>
+        <p class="content-full-copy">Agile, iterative product development means lower risks by delivering a usable product in the least amount of time. This development methodology also allows requirements to be fleshed out and evolve over time rather than all up front. User stories, design sprints, Scrum and test driven development are all effectively employed to ensure products are delivered quickly, accurately and with the least amount of technical debt.</p>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12 text-cell">
+        <h2 class="content-full-head">Leadership</h2>
+        <p class="content-full-copy">The best designers and developers need to feel that they are part of a team. We use Scrum to give everyone on our team a voice and to promote team unity. Honest, timely and direct communication is essential to a high functioning team. Clear communication between business and technical groups is our specialty.</p>
+    </div>
+  </div> <!-- Row -->
+
+  <div class="fb-follow" data-href="https://www.facebook.com/hyperionservicesltd/" data-layout="button" data-show-faces="false" data-colorscheme="dark"></div>
+</div> <!-- Main Content -->
+
+
+
+
 
 </body>
 </html>
