@@ -155,25 +155,53 @@ h2 {
   padding-left: 10%;
   padding-right: 10%;
 }
-.picture-cell {
-  padding: 0px 0px 0px 0px;
-}
-.content-full h3 {
-  color: white;
-  position: absolute;
-  width: 320px;
-  text-align: center;
-  background-color: #001a66;
-  padding-top: 10px;
-  padding-bottom: 10px;
-/*  margin-left: auto;
-  margin-right: auto;*/
-  margin-top: 0px;
-  opacity: .7;
-}
 .content-full-head {
   color: #ffb84d;
 }
+
+
+
+#design-tile, #wireframe-tile, #mobile-tile {
+  height: 320px;
+  width: 100%;
+  /*width: 320px;*/
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+#design-tile:hover, #wireframe-tile:hover, #mobile-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#design-tile {
+  background: url('../images/logos-designed.jpg') no-repeat;
+  background-position: center;
+}
+#wireframe-tile {
+  background: url('../images/plans.jpg') no-repeat;
+  background-position: center;
+}
+#mobile-tile {
+  background: url('../images/web-design.jpg') no-repeat;
+  background-position: center;
+}
+#design-tile span, #wireframe-tile span, #mobile-tile span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #001a66;
+  color: #fff;
+  opacity: .7;
+}
+
+
+
+
+
 .table-striped {
   width: 75%;
   margin-left: auto;
@@ -230,6 +258,10 @@ h2 {
     background: url('../images/jumbotron_768.jpg') no-repeat;
     height: 256px;
   }
+  #mobile-tile, span {
+    width: 320px;
+    margin: 0 auto 15px;
+  }
   /* End Home Page */
 
 }
@@ -270,6 +302,10 @@ h2 {
   .tools img {
     background: url('../images/jumbotron_768.jpg') no-repeat;
     height: 256px;
+  }
+  #design-tile, #wireframe-tile, #mobile-tile, span {
+    width: 320px;
+    margin: 0 auto 15px;
   }
   /* End Body */
 }
