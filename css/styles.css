@@ -196,13 +196,7 @@ h2 {
   background-color: #001a66;
   color: #fff;
   opacity: .7;
-
 }
-
-
-
-
-
 .table-striped {
   width: 75%;
   margin-left: auto;
@@ -210,6 +204,14 @@ h2 {
 }
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
    background-color: #707070;
+}
+.panel-footer {
+  padding-top: 25px;
+  background-image: url('../images/blue-wood_960.jpg');
+  background-size: 100%;
+  flex-shrink:1;
+  min-width:100%;
+  height: auto;
 }
 /* END HOME PAGE */
 
@@ -309,6 +311,11 @@ h2 {
     margin: 0 auto 15px;
   }
   /* End Body */
+
+  /* Footer */
+  .panel-footer {
+    text-align: center;
+  }
 }
 
 

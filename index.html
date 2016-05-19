@@ -46,20 +46,20 @@
               <a href="index.html">
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
-            <li id="navMenuButton">
-              <a href="#" onclick="$dc.loadMenuCategories();">
+            <li>
+              <a href="#technology">
                 <br class="hidden-xs"> Technology</a>
             </li>
             <li>
-              <a href="#">
+              <a href="#home-tiles">
                 <br class="hidden-xs"> Design</a>
             </li>
             <li>
-              <a href="#">
+              <a href="#leadership">
                 <br class="hidden-xs"> Leadership</a>
             </li>
             <li>
-              <a href="#">
+              <a href="#contact">
                 <br class="hidden-xs"> Contact</a>
             </li>
           </ul><!-- #nav-list -->
@@ -100,7 +100,7 @@
     </div>
   </div> <!-- Row -->
 
-  <div class="row content-full">
+  <div class="row content-full" id="technology">
     <h2 class="content-full-head">Tools of the Trade</h2>
     <p class="content-full-copy">Using the latest technology can lower development costs and the lifetime cost of maintaining a product. Starting a new project using technology that is already out of date means finding developers to maintain the product in the future could be challenging. Not only that, but new frameworks and technologies are coming online at rates unprecedented in our industry, as are new development paradigns such as Single Page Applications (SPA) and rapid prototyping and development tools such as Bootstrap, Ruby on Rails and AngularJS. At Hyperion we pride ourselves in being versed in the pros (and cons!) of all the latest technology to keep costs under control now and in the future.</p>
     <p class="content-full-copy">Some of our preferred technologies:</p>
@@ -142,13 +142,13 @@
     <h2 class="content-full-head">Design Driven</h2>
     <p class="content-full-copy">Design is in our DNA. With over 15 years of graphic design, logo design, print layout, branding, UI/UX and art direction you can be assured that cutting edge design will always be a top consideration in any of our projects. User needs and feedback are taken into considation from the beginning in design sprints and all through user acceptance.</p>
       <div class="col-lg-4 col-md-6 col-xs-12">
-        <a href="menu-categories.html"><div id="design-tile"><span>logo<br>design</span></div></a>
+        <a href="design.html"><div id="design-tile"><span>logo<br>design</span></div></a>
       </div>
       <div class="col-lg-4 col-md-6 col-xs-12">
-        <a href="single-category.html"><div id="wireframe-tile"><span>wireframes<br>&amp; prototypes</span></div></a>
+        <a href="wireframe.html"><div id="wireframe-tile"><span>wireframes<br>&amp; prototypes</span></div></a>
       </div>
       <div class="col-lg-4 col-md-12 col-xs-12">
-        <a href="single-category.html"><div id="mobile-tile"><span>web, mobile<br>&amp; desktop</span></div></a>
+        <a href="mobile.html"><div id="mobile-tile"><span>web, mobile<br>&amp; desktop</span></div></a>
       </div>
     </div><!-- End of #home-tiles -->
 
@@ -157,25 +157,46 @@
 
   <div class="row content-full">
     <div class="col-md-4 col-sm-6 col-xs-12 text-cell">
-        <h2 class="content-full-head">Mobile First</h2>
+        <h2 class="content-full-head" id="mobile-first">Mobile First</h2>
         <p class="content-full-copy">Over 80% of all internet users use a smart phone and 56% of web traffic comes from mobile devices. This means designing for small and large screens (known as responsive design) is not just a nice-to-have, but a necessity. At Hyperion we understand this need and factor that into the product from inception.</p>
     </div>
     <div class="col-md-4 col-sm-6 col-xs-12 text-cell">
-        <h2 class="content-full-head">Agile &amp; Flexible</h2>
+        <h2 class="content-full-head" id="agile">Agile &amp; Flexible</h2>
         <p class="content-full-copy">Agile, iterative product development means lower risks by delivering a usable product in the least amount of time. This development methodology also allows requirements to be fleshed out and evolve over time rather than all up front. User stories, design sprints, Scrum and test driven development are all effectively employed to ensure products are delivered quickly, accurately and with the least amount of technical debt.</p>
     </div>
     <div class="col-md-4 col-sm-12 col-xs-12 text-cell">
-        <h2 class="content-full-head">Leadership</h2>
+        <h2 class="content-full-head" id="leadership">Leadership</h2>
         <p class="content-full-copy">The best designers and developers need to feel that they are part of a team. We use Scrum to give everyone on our team a voice and to promote team unity. Honest, timely and direct communication is essential to a high functioning team. Clear communication between business and technical groups is our specialty.</p>
     </div>
   </div> <!-- Row -->
 
-  <div class="fb-follow" data-href="https://www.facebook.com/hyperionservicesltd/" data-layout="button" data-show-faces="false" data-colorscheme="dark"></div>
 </div> <!-- Main Content -->
 
 
-
-
+<footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="contact" class="col-sm-4">
+          <span>Contact:</span><br>
+          Mike Leibrand<br>
+          <a href="mailto:ml@hyperionservicesltd.com">ml@hyperionservicesltd.com</a><br>
+          614-323-3497<br>
+          <div class="fb-follow" data-href="https://www.facebook.com/hyperionservicesltd/" data-layout="button" data-show-faces="false" data-colorscheme="dark"></div>
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          1112 Urlin Ave<br>
+          Columbus, OH 43212
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonial" class="col-sm-4">
+          <p>"Mike was an excellent person to work for. He utitilized the perfect combination of flexibility and accountabiity to keep his employees both happy and motivated. He did not micromanage but at the same time communicated clear expectations and direction."</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright Mike Leibrand 2016</div>
+    </div>
+  </footer>
 
 </body>
 </html>
