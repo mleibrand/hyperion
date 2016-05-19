@@ -1,0 +1,315 @@
+ body {
+  font-size: 16px;
+  line-height: 1.5em;
+  /*word-spacing: .05em;*/
+  /*letter-spacing: .02em;*/
+  color: #a6a6a6;
+  font-family: 'Open Sans', sans-serif;
+}
+h2 {
+  font-weight: 300;
+}
+/** HEADER **/
+#header-nav {
+  background-image: url('../images/blue-wood.jpg');
+  background-size: 100%;
+  border-radius: 0;
+  border: 0;
+  height: 130px;
+  margin-bottom: 0px;
+}
+
+#logo-img {
+  background: url('../images/HyperionLogo.svg') no-repeat;
+  background-size: 80px, 80px;
+  background-position: center;
+  width: 110px;
+  height: 110px;
+  margin: 10px 5px 10px 0;
+}
+
+.navbar-brand {
+  padding-top: 48px;
+}
+
+.navbar-brand h1 { /* Company names */
+  font-family: 'Monda', sans-serif;
+  color: #ffb84d;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand h2 { /* Company name2 */
+  font-family: 'Monda', sans-serif;
+  color: #a6a6a6;
+  font-size: 1.12em;
+  letter-spacing: .21em;
+  text-transform: uppercase;
+  margin-top: 7px;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 45px;
+}
+#nav-list a {
+  color: #a6a6a6;
+  font-size: 1.15em;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #001a66;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #a6a6a6;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* HOME PAGE */
+.tools {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position: relative;
+}
+.tools img {
+  flex-shrink:1;
+  min-width:100%;
+  height: auto;
+}
+.jumbo-text {
+  position: absolute;
+  font-weight: 300;
+  font-size: 3.5em;
+  width: 100%;
+  text-align: center;
+}
+#jumbo-txt-1 {
+  top: 18%;
+}
+#jumbo-txt-2 {
+  top: 60%;
+}
+.trans-rect {
+  position: absolute;
+  flex-shrink:1;
+  min-width:100%;
+  height: 33%;
+  background-color: #001a66;
+  opacity: .5;
+}
+#learn-more-button {
+  position: absolute;
+  text-transform: uppercase;
+  background-color: #001a66;
+  color: #ffb84d;
+  height: 90px;
+  width: 90px;
+  bottom: 30px;
+  right: 50%;
+  margin-right: -45px;
+  border-radius: 45px;
+  opacity: .8;
+  box-shadow: 3px 3px 5px #001a66;
+}
+#main-content {
+  background-image: url('../images/black-wood_1200.jpg');
+  background-size: 100%;
+  flex-shrink:1;
+  min-width:100%;
+  height: auto;
+}
+#dividing-line {
+  margin-top: 60px;
+  height: 2px;
+  border-radius: 2px;
+  width: 68%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #707070;
+}
+.cell {
+  text-align: center;
+  margin-top: 25px;
+  color: #707070;
+}
+.content-icons {
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+}
+.content-full {
+  margin-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.picture-cell {
+  padding: 0px 0px 0px 0px;
+}
+.content-full h3 {
+  color: white;
+  position: absolute;
+  width: 320px;
+  text-align: center;
+  background-color: #001a66;
+  padding-top: 10px;
+  padding-bottom: 10px;
+/*  margin-left: auto;
+  margin-right: auto;*/
+  margin-top: 0px;
+  opacity: .7;
+}
+.content-full-head {
+  color: #ffb84d;
+}
+.table-striped {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #707070;
+}
+/* END HOME PAGE */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+   .tools img {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Home Page */
+  .jumbo-text {
+    font-size: 2.2em;
+  }
+  .tools img {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 331px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (max-width: 991px) {
+  /* Header */
+  #header-nav {
+    /*background-image: url('../images/blue-wood.jpg');*/
+    height: 110px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 0px;
+  }
+  #nav-list {
+    margin-top: 40px;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .jumbo-text {
+    font-size: 2em;
+  }
+  .trans-rect {
+    height: 40%;
+  }
+  .tools img {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 256px;
+  }
+  /* End Home Page */
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+    #header-nav {
+      /*background-image: url('../images/blue-wood.jpg');*/
+      height: 100px;
+    }
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 20px;
+  }
+  .navbar-header button.navbar-toggle {
+    margin-top: -45px;
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  /* End Header */
+
+  /* Body */
+  .jumbo-text {
+    font-size: 2em;
+  }
+  .trans-rect {
+    height: 40%;
+  }
+  .tools img {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 256px;
+  }
+  /* End Body */
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  #header-nav {
+    /*background-image: url('../images/blue-wood.jpg');*/
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+  }
+  .navbar-header button.navbar-toggle {
+    margin-top: -55px;
+  }
+  /* End Header */
+
+  /* Body */
+  .jumbo-text {
+    font-size: 1.6em;
+  }
+  .trans-rect {
+    height: 55%;
+  }
+  .tools img {
+    background: url('../images/jumbotron_480.jpg') no-repeat;
+    height: 160px;
+  }
+  #learn-more-button {
+    height: 70px;
+    width: 70px;
+    bottom: 10px;
+    right: 50%;
+    margin-right: -35px;
+    border-radius: 35px;
+    font-size: 1em;
+  }
+  /* End Body */
+}
+
