@@ -163,8 +163,8 @@ h2 {
 
 #design-tile, #wireframe-tile, #mobile-tile {
   height: 320px;
-  width: 100%;
-  /*width: 320px;*/
+  width: 320px;
+  margin: 0 auto 15px;
   margin-bottom: 15px;
   position: relative;
   overflow: hidden;
@@ -196,6 +196,7 @@ h2 {
   background-color: #001a66;
   color: #fff;
   opacity: .7;
+
 }
 
 
